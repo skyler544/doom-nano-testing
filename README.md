@@ -34,5 +34,5 @@ Sources, and inspiration:
 [Doom Emacs](https://github.com/hlissner/doom-emacs)
 
 Screenshots:
-[](https://github.com/skyler544/doom-nano-testing/blob/main/screenshots/1.png)
-[](https://github.com/skyler544/doom-nano-testing/blob/main/screenshots/2.png)
+![screenshot](https://github.com/skyler544/doom-nano-testing/blob/main/screenshots/1.png)
+![screenshot](https://github.com/skyler544/doom-nano-testing/blob/main/screenshots/2.png)
