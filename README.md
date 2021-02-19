@@ -7,7 +7,7 @@ I am a learning coder and did not write most of the code in this repo. What I've
 Load this code by adding the cloned repo to the load path and requiring it in your private config. Like so for instance: 
 
 ``` emacs-lisp
-(add-to-list 'load-path "~/build/nano-doom-testing")
+(add-to-list 'load-path "~/build/doom-nano-testing")
 (require 'load-nano)
 ```
 
