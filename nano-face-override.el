@@ -36,19 +36,19 @@
 (set-face-attribute 'font-lock-builtin-face nil
                     :foreground "#664273"                      )
 
-(after! sh-mode
- (set-face-attribute 'sh-quoted-exec nil
-                     :foreground "#547894"                      ))
-
-(defun set-shell-face ()
+(defun set-shell-face (                                        )
   (set-face-attribute 'sh-quoted-exec nil
-                       :foreground "#547894"                      ))
+                       :foreground "#547894"                   ))
+(add-hook 'sh-mode-hook #'set-shell-face                       )
 
-(add-hook 'sh-mode-hook #'set-shell-face)
-
-(after! vterm-mode
+(defun vterm-faces (                                           )
  (set-face-attribute 'vterm-color-red nil
-                     :foreground "#AD3A41" :background nil      ))
+                     :foreground "#AD3A41" :background nil     )
+ (set-face-attribute 'vterm-color-yellow nil
+                     :foreground "#ab9d27" :background nil     )
+ (set-face-attribute 'vterm-color-green nil
+                     :foreground "#337846" :background nil     ))
+(add-hook 'vterm-mode-hook #'vterm-faces                       )
 
 (after! mu4e-thread-folding
  (set-face-attribute 'mu4e-header-highlight-face nil
@@ -61,10 +61,10 @@
 (after! font-latex
  (set-face-attribute 'font-latex-script-char-face nil
                       :foreground "#516575"
-                      :weight 'bold                             )
+                      :weight 'bold                            )
  (set-face-attribute 'font-latex-math-face nil
                       :foreground "#516575"
-                      :weight 'bold                             ))
+                      :weight 'bold                            ))
 
 ; for reference
 ;(set-face-attribute face nil

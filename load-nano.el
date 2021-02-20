@@ -19,7 +19,6 @@
       custom-blue "#718591"
       custom-yellow "#BDA441")
 
-
 ; still haven't figured out what is up with point
 ; related to nano. this is a stopgap measure to
 ; get a decent looking cursor
@@ -36,9 +35,5 @@
 (defun set-blue ()
   (interactive)
   (set-cursor-color custom-blue))
-
-; not working
-(add-hook 'evil-emacs-state-entry-hook 'set-yellow)
-(add-hook 'evil-emacs-state-exit-hook 'set-blue)
 
 (provide 'load-nano)
