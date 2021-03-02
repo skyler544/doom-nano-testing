@@ -170,8 +170,8 @@ background color that is barely perceptible."
   (if (display-graphic-p)
       (set-face-attribute 'nano-face-strong nil
                           :foreground (face-foreground 'nano-face-default)
-                          :family "Roboto Mono"
-                          :weight 'medium)
+                          :family "Hack"
+                          :weight 'bold)
     (set-face-attribute 'nano-face-strong nil
                         :foreground (face-foreground 'nano-face-default)
                         :weight 'bold))
@@ -197,7 +197,7 @@ background color that is barely perceptible."
   (set-face-attribute 'nano-face-tag-default nil
                       :foreground nano-color-foreground
                       :background nano-color-background
-                      :family "Hack Nerd Font" :weight 'regular
+                      :family "Hack" :weight 'regular
                       :height (if (display-graphic-p) 160 1)
                       :box `(:line-width 1
                                          :color ,nano-color-foreground
@@ -214,7 +214,7 @@ background color that is barely perceptible."
   (set-face-attribute 'nano-face-tag-strong nil
                       :foreground nano-color-strong
                       :background nano-color-subtle
-                      :family "Hack Nerd Font" :weight 'regular
+                      :family "Hack" :weight 'regular
                       :height (if (display-graphic-p) 160 1)
                       :box `(:line-width 1
                                          :color ,nano-color-strong
@@ -230,7 +230,7 @@ background color that is barely perceptible."
   (set-face-attribute 'nano-face-tag-salient nil
                       :foreground nano-color-background
                       :background nano-color-salient
-                      :family "Hack Nerd Font" :weight 'regular
+                      :family "Hack" :weight 'regular
                       :height (if (display-graphic-p) 160 1)
                       :box `(:line-width 1
                                          :color ,nano-color-salient
@@ -246,7 +246,7 @@ background color that is barely perceptible."
   (set-face-attribute 'nano-face-tag-popout nil
                       :foreground nano-color-background
                       :background nano-color-popout
-                      :family "Hack Nerd Font" :weight 'regular
+                      :family "Hack" :weight 'regular
                       :height (if (display-graphic-p) 160 1)
                       :box `(:line-width 1
                                          :color ,nano-color-popout
@@ -262,7 +262,7 @@ background color that is barely perceptible."
   (set-face-attribute 'nano-face-tag-faded nil
                       :foreground nano-color-background
                       :background nano-color-faded
-                      :family "Hack Nerd Font" :weight 'regular
+                      :family "Hack" :weight 'regular
                       :height (if (display-graphic-p) 160 1)
                       :box `(:line-width 1
                                          :color ,nano-color-faded
@@ -279,7 +279,7 @@ background color that is barely perceptible."
   (set-face-attribute 'nano-face-tag-critical nil
                       :foreground nano-color-background
                       :background nano-color-critical
-                      :family "Hack Nerd Font" :weight 'regular
+                      :family "Hack" :weight 'regular
                       :height (if (display-graphic-p) 160 1)
                       :box `(:line-width 1
                                          :color ,nano-color-critical

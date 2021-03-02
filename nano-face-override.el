@@ -8,6 +8,12 @@
 (set-face-attribute 'nano-face-critical nil
                     :foreground "#9c2f18" :background nil       )
 
+(after! flycheck
+ (set-face-attribute 'flycheck-error nil
+                     :underline '(:color "#9c2f18" :style wave))
+ (set-face-attribute 'flycheck-warning nil
+                     :underline '(:color "#ab9d27" :style wave)))
+
 (set-face-attribute 'link nil
                     :underline  t                               )
 (set-face-attribute 'button nil
@@ -43,11 +49,13 @@
 
 (defun vterm-faces (                                            )
  (set-face-attribute 'vterm-color-red nil
-                     :foreground "#AD3A41" :background nil      )
+                     :foreground "#9c2f18" :background nil      )
  (set-face-attribute 'vterm-color-yellow nil
                      :foreground "#ab9d27" :background nil      )
+ (set-face-attribute 'vterm-color-blue nil
+                     :foreground "#4D6794" :background nil      )
  (set-face-attribute 'vterm-color-green nil
-                     :foreground "#337846" :background nil      ))
+                     :foreground "#4C6B3D" :background nil      ))
 (add-hook 'vterm-mode-hook #'vterm-faces                        )
 
 (after! mu4e-thread-folding
@@ -65,12 +73,29 @@
  (set-face-attribute 'font-latex-math-face nil
                      :foreground "#516575"
                      :weight 'bold                              ))
+(after! hydra
+ (set-face-attribute 'hydra-face-red nil
+                     :foreground "#9c2f18"
+                     :weight 'bold                              ))
 
 (after! smartparens
  (set-face-attribute 'show-paren-match nil
-                     :foreground "#2F3B41" :background "#60807f")
+                     :foreground "#7A4A82" :background "#628F88"
+                     :weight 'bold         :inverse-video t     )
  (set-face-attribute 'sp-show-pair-match-face nil
-                     :foreground "#2F3B41" :background "#60807f"))
+                     :foreground "#7A4A82" :background "#628F88"
+                     :weight 'bold         :inverse-video t     ))
+
+(after! haskell-mode
+ (set-face-attribute 'haskell-constructor-face nil
+                     :foreground "#2f3b41"                      )
+ (set-face-attribute 'haskell-operator-face nil
+                     :foreground "#644977"
+                     :weight 'normal                            )
+ (set-face-attribute 'haskell-type-face nil
+                     :foreground "#334954"                      )
+ (set-face-attribute 'haskell-keyword-face nil
+                     :weight 'bold                              ))
 
 ; for reference
 ;(set-face-attribute face nil
