@@ -455,7 +455,6 @@
       (concat "(" (substring-no-properties (mu4e-context-label) 1 -1) ")")
     "(none)"))
 
-
 ;; ---------------------------------------------------------------------
 (defun nano-modeline ()
   "Install a header line whose content is dependend on the major mode"

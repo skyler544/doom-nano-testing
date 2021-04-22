@@ -8,21 +8,75 @@
 (set-face-attribute 'nano-face-critical nil
                     :foreground "#9c2f18" :background nil       )
 
+(set-face-attribute 'help-key-binding nil
+                    :foreground "#2f3b41" :background "#c2c5c8"
+                    :weight 'bold         :box nil              )
+
+(after! eros
+ (set-face-attribute 'eros-result-overlay-face nil
+                     :foreground "#2f3b41" :background "#c2c5c8"
+                     :weight 'bold         :box t                ))
+
 (after! flycheck
  (set-face-attribute 'flycheck-error nil
-                     :underline '(:color "#9c2f18" :style wave))
+                     :underline '(:color "#9c2f18" :style wave  ))
  (set-face-attribute 'flycheck-warning nil
-                     :underline '(:color "#ab9d27" :style wave)))
+                     :underline '(:color "#ab9d27" :style wave  )))
+
+(after! avy
+ (set-face-attribute 'avy-lead-face nil
+                     :foreground "#2f3b41" :background "#8494A3"
+                     :underline t                               )
+ (set-face-attribute 'avy-lead-face-1 nil
+                     :foreground "#2f3b41" :background "#8494A3"
+                     :underline t                               )
+ (set-face-attribute 'avy-lead-face-0 nil
+                     :foreground "#2f3b41" :background "#8494A3"
+                     :underline t                               ))
+
+(after! lsp-ui
+  (set-face-attribute 'lsp-ui-doc-url nil
+                      :inherit nil
+                      :underline t
+                      :background "#B2BAC2"                     )
+  (set-face-attribute 'lsp-ui-doc-background nil
+                      :inherit nil
+                      :box        t
+                      :background "#B2BAC2"                     ))
+
+(after! lsp-mode
+  (set-face-attribute 'lsp-signature-face nil
+                      :background "#B2BAC2"
+                      :inherit nil                              )
+  (set-face-attribute 'lsp-face-highlight-read nil
+                      :underline nil
+                      :inherit nil
+                      :background "#B2BAC2"                     )
+  (set-face-attribute 'lsp-face-highlight-write nil
+                      :underline t
+                      :inherit nil
+                      :background "#B2BAC2"                     ))
+
+(after! popup
+ (set-face-attribute 'popup-tip-face nil
+                     :background "#B2BAC2"                      ))
 
 (set-face-attribute 'link nil
                     :underline  t                               )
 (set-face-attribute 'button nil
                     :underline  t                               )
+(after! hl-line
+ (set-face-attribute 'hl-line nil :background "#98A5B3"         ))
 
-(set-face-attribute 'hl-line nil
-                                          :background "#98A5B3" )
 (set-face-attribute 'cursor nil
                                           :background "#718591" )
+(after! web-mode
+  (set-face-attribute 'web-mode-doctype-face nil
+                      :foreground "#485961"                     )
+  (set-face-attribute 'web-mode-html-attr-name-face nil
+                      :foreground "#335B6B"                     )
+  (set-face-attribute 'web-mode-html-tag-face nil
+                      :foreground "#664273"                     ))
 
 (after! diredfl
  (set-face-attribute 'diredfl-dir-heading nil
@@ -54,6 +108,8 @@
                      :foreground "#ab9d27" :background nil      )
  (set-face-attribute 'vterm-color-blue nil
                      :foreground "#4D6794" :background nil      )
+ (set-face-attribute 'vterm-color-magenta nil
+                     :foreground "#664273" :background nil      )
  (set-face-attribute 'vterm-color-green nil
                      :foreground "#4C6B3D" :background nil      ))
 (add-hook 'vterm-mode-hook #'vterm-faces                        )
@@ -86,16 +142,16 @@
                      :foreground "#7A4A82" :background "#628F88"
                      :weight 'bold         :inverse-video t     ))
 
-(after! haskell-mode
- (set-face-attribute 'haskell-constructor-face nil
-                     :foreground "#2f3b41"                      )
- (set-face-attribute 'haskell-operator-face nil
-                     :foreground "#644977"
-                     :weight 'normal                            )
- (set-face-attribute 'haskell-type-face nil
-                     :foreground "#334954"                      )
- (set-face-attribute 'haskell-keyword-face nil
-                     :weight 'bold                              ))
+;(after! haskell-mode
+; (set-face-attribute 'haskell-constructor-face nil
+;                     :foreground "#2f3b41"                      )
+; (set-face-attribute 'haskell-operator-face nil
+;                     :foreground "#644977"
+;                     :weight 'normal                            )
+; (set-face-attribute 'haskell-type-face nil
+;                     :foreground "#334954"                      )
+; (set-face-attribute 'haskell-keyword-face nil
+;                     :weight 'bold                              ))
 
 ; for reference
 ;(set-face-attribute face nil
@@ -103,6 +159,6 @@
 ;                    :family     'unspecified :slant      'unspecified
 ;                    :weight     'unspecified :height     'unspecified
 ;                    :underline  'unspecified :overline   'unspecified
-;                    :box        'unspecified :inherit    style)
+;                    :box        'unspecified :inherit    style )
 
-(provide 'nano-face-override)
+(provide 'nano-face-override                                    )
