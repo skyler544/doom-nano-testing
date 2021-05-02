@@ -15,7 +15,7 @@
 (after! eros
  (set-face-attribute 'eros-result-overlay-face nil
                      :foreground "#2f3b41" :background "#c2c5c8"
-                     :weight 'bold         :box t                ))
+                     :weight 'bold         :box t               ))
 
 (after! flycheck
  (set-face-attribute 'flycheck-error nil
@@ -57,6 +57,48 @@
                       :inherit nil
                       :background "#B2BAC2"                     ))
 
+(after! git-gutter-fringe
+  (set-face-attribute 'git-gutter-fr:modified nil
+                      :weight 'bold
+                      :foreground "#CCB032"                     ))
+
+(after! magit
+  (set-face-attribute 'magit-diff-hunk-heading-highlight nil
+                      :underline t
+                      :box nil
+                      :background "#B0BABF"                     )
+  (set-face-attribute 'magit-diff-hunk-heading nil
+                      :background "#B0BABF"                     )
+  (set-face-attribute 'magit-diff-context-highlight nil
+                      :foreground "#2F3B41"
+                      :background "#C2C5C8"                     )
+  (set-face-attribute 'magit-diff-added-highlight nil
+                      :weight 'bold
+                      :foreground "#1C7043"
+                      :background "#C2C5C8"                     )
+  (set-face-attribute 'magit-diff-added nil
+                      :foreground "#1C7043"
+                      :background "#C2C5C8"                     )
+  (set-face-attribute 'magit-diff-removed-highlight nil
+                      :weight 'bold
+                      :foreground "#A11715"
+                      :background "#C2C5C8"                     )
+  (set-face-attribute 'magit-diff-removed nil
+                      :foreground "#A11715"
+                      :background "#C2C5C8"                     )
+  (set-face-attribute 'magit-hash nil
+                      :weight 'bold
+                      :foreground "#879099"                     )
+  (set-face-attribute 'magit-section-highlight nil
+                      :background "#B6BFC4"
+                      :inherit nil                              ))
+
+(after! info
+ (set-face-attribute 'info-xref-visited nil
+                     :foreground "#784A87"                      )
+ (set-face-attribute 'info-menu-star nil
+                     :foreground "#2F3B41"                      ))
+
 (after! popup
  (set-face-attribute 'popup-tip-face nil
                      :background "#B2BAC2"                      ))
@@ -78,12 +120,28 @@
   (set-face-attribute 'web-mode-html-tag-face nil
                       :foreground "#664273"                     ))
 
+(after! company
+ (set-face-attribute 'company-tooltip-search nil
+                     :background "#92A0A9"                      )
+ (set-face-attribute 'company-tooltip-common nil
+                     :background "#92A0A9"                      )
+;(set-face-attribute 'company-box-scrollbar nil
+;                    :background "#92A0A9"                      )
+ (set-face-attribute 'company-tooltip-annotation nil
+                     :background "#92A0A9"                      )
+ (set-face-attribute 'company-scrollbar-bg nil
+                     :background "#92A0A9"                      )
+ (set-face-attribute 'company-scrollbar-fg nil
+                     :background "#92A0A9"                      ))
+
 (after! diredfl
  (set-face-attribute 'diredfl-dir-heading nil
                      :foreground "#466662" :background nil
                      :weight 'bold
                      :underline  t                              )
  (set-face-attribute 'diredfl-dir-name nil
+                     :foreground "#476a87" :background nil      )
+ (set-face-attribute 'diredfl-compressed-file-suffix nil
                      :foreground "#476a87" :background nil      )
  (set-face-attribute 'diredfl-file-name nil
                      :foreground "#2f3b41"                      )
@@ -103,7 +161,7 @@
 
 (defun vterm-faces (                                            )
  (set-face-attribute 'vterm-color-red nil
-                     :foreground "#9c2f18" :background nil      )
+                     :foreground "#A71622" :background nil      )
  (set-face-attribute 'vterm-color-yellow nil
                      :foreground "#ab9d27" :background nil      )
  (set-face-attribute 'vterm-color-blue nil
@@ -141,17 +199,6 @@
  (set-face-attribute 'sp-show-pair-match-face nil
                      :foreground "#7A4A82" :background "#628F88"
                      :weight 'bold         :inverse-video t     ))
-
-;(after! haskell-mode
-; (set-face-attribute 'haskell-constructor-face nil
-;                     :foreground "#2f3b41"                      )
-; (set-face-attribute 'haskell-operator-face nil
-;                     :foreground "#644977"
-;                     :weight 'normal                            )
-; (set-face-attribute 'haskell-type-face nil
-;                     :foreground "#334954"                      )
-; (set-face-attribute 'haskell-keyword-face nil
-;                     :weight 'bold                              ))
 
 ; for reference
 ;(set-face-attribute face nil
