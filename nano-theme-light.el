@@ -15,23 +15,20 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;; ---------------------------------------------------------------------
-;;
-;; I've modified this to be similar to my
-;;
 
 (require 'nano-base-colors)
 (defun nano-theme-set-light ()
   "Apply light Nano theme base."
-  (setq frame-background-mode    'light)
-  (setq nano-color-foreground "#2F3B41")
-  (setq nano-color-background "#C2C5C8")
-  (setq nano-color-highlight  "#24566B")
-  (setq nano-color-critical   "#AB9D27")
-  (setq nano-color-salient    "#335B6B")
-  (setq nano-color-strong     "#2E3B40")
-  (setq nano-color-popout     "#4C6B3D")
-  (setq nano-color-subtle     "#718591")
-  (setq nano-color-faded      "#485961"))
+  (setq frame-background-mode  'light       )
+  (setq nano-color-foreground  dn-foreground)
+  (setq nano-color-background  dn-background)
+  (setq nano-color-highlight   dn-highlight )
+  (setq nano-color-critical    dn-attention )
+  (setq nano-color-salient     dn-salient   )
+  (setq nano-color-strong      dn-strong    )
+  (setq nano-color-popout      dn-popout    )
+  (setq nano-color-subtle      dn-subtle    )
+  (setq nano-color-faded       dn-faded     ))
 
 (nano-theme-set-light)
 

@@ -6,12 +6,13 @@
 (setq doom-theme 'nil)
 
 (require 'nano-layout)
+(require 'nano-modeline)
+(require 'nano-theme)
+(require 'nano-colors)
 (require 'nano-theme-light)
 (require 'nano-faces)
 (nano-faces)
-(require 'nano-theme)
 (nano-theme)
-(require 'nano-modeline)
 (require 'nano-face-override)
 
 (setq display-line-numbers-type nil
