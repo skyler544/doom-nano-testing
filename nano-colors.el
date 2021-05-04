@@ -14,9 +14,9 @@
       dn-subtle     "#718591" ; dark teal
       dn-faded      "#4c5e6e" ; dark grey
       dn-faded-alt  "#485961" ; dark grey alternate
-      dn-critical   "#9C2F18" ; dark red
       dn-violet     "#7A4A82" ; violet
       dn-violet-alt "#664273" ; violet alternate
+      dn-critical   "#9C2F18" ; dark red
       dn-strong     "#2E3B40" ; light black
       dn-foreground "#2F3B41" ; very dark blue-grey
 )
