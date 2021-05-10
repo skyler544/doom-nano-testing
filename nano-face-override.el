@@ -143,7 +143,7 @@
                      :background dn-medium                      ))
 (after! diredfl
 (set-face-attribute 'diredfl-dir-heading nil
-                     :foreground dn-grey
+                     :foreground dn-faded
                      :background nil
                      :weight 'bold
                      :underline  t                              )

@@ -498,9 +498,9 @@
                 ;; (setq mode-line-format (list "")))
         (with-current-buffer (window-buffer window)
           (setq mode-line-format nil)))
-;;      (if (window-in-direction 'above)
-;;            (face-remap-add-relative 'header-line '(:overline "#777777"))
-;;          (face-remap-add-relative 'header-line '(:overline nil)))
+        (if (window-in-direction 'above)
+              (face-remap-add-relative 'header-line '(:overline "#98A5B3"))
+            (face-remap-add-relative 'header-line '(:overline nil)))
           )))
 (add-hook 'window-configuration-change-hook 'nano-modeline-update-windows)
 
