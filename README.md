@@ -1,5 +1,9 @@
 # doom-nano-testing
 
+# Notice:
+I haven't used this in several months. Both Doom and Nano are actively maintained and this repository does not reflect the current state of either of those projects. If it works for you, that's great. Otherwise, it may be better to see this repository as historical. If I ever resurrect it, I'll remove this notice.
+
+
 This is my attempt at adapting the gorgeous Nano Emacs by Nicolas Rougier to work with the powerhouse that is Doom Emacs. 
 
 I am a learning coder and did not write most of the code in this repo. What I've done is trimmed down the Nano codebase to just the files I need and wrote some code to get it working and looking the way I like. 
